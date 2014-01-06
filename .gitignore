@@ -14,3 +14,9 @@
 # Ignore all logfiles and tempfiles.
 /log/*.log
 /tmp
+
+#Ignore temp and vim files
+
+*~
+*.swp
+*.swo
