@@ -23,15 +23,15 @@ body {
 }
 
 #home {
-  background: url("kitty-1.jpg") 50% 0 repeat fixed; min-height: 800px;
+  background: url(image_path("kitty-1.jpg")) 50% 0 repeat fixed; min-height: 800px;
 }
 
 #photo {
-  background: url("puppy-1.jpg") 50% 0 repeat fixed; min-height: 800px;
+  background: url(image_path("puppy-1.jpg")) 50% 0 repeat fixed; min-height: 800px;
 }
 
 #video {
-  background: url("ants-1.jpg") 50% 0 repeat fixed; min-height: 800px;
+  background: url(image_path("ants-1.jpg")) 50% 0 repeat fixed; min-height: 800px;
 }
 
 .notice, .alert {
