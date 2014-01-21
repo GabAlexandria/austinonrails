@@ -1,3 +1,40 @@
 // Place all the styles related to the Pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+body {
+  margin: 0;
+}
+
+#home, #photo, #video {
+  height: 800px;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1920px;
+  position: relative;
+}
+
+#home article, #photo article, #video article {
+  height: 450px;
+  position: absolute;
+  text-align: center;
+  top: 200px;
+  margin: 50px 100px;
+}
+
+#home {
+  background: url("kitty-1.jpg") 50% 0 repeat fixed; min-height: 800px;
+}
+
+#photo {
+  background: url("puppy-1.jpg") 50% 0 repeat fixed; min-height: 800px;
+}
+
+#video {
+  background: url("ants-1.jpg") 50% 0 repeat fixed; min-height: 800px;
+}
+
+.notice, .alert {
+  -webkit-margin-before: 0px;
+  -webkit-margin-after: 0px;
+}

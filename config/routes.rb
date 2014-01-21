@@ -1,5 +1,5 @@
 Austinonrails::Application.routes.draw do
-  resources :settings
+  devise_for :users
 
   resources :albums
 
@@ -8,6 +8,14 @@ Austinonrails::Application.routes.draw do
   resources :videos
 
   resources :pages
+
+  namespace :admin do
+    resources :albums
+    resources :photos
+    resources :videos
+    resources :pages
+    resources :users
+  end
 
   root 'pages#home'
 
