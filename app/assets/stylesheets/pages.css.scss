@@ -12,14 +12,27 @@ body {
   width: 100%;
   max-width: 1920px;
   position: relative;
+  h1 {
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    padding-top: 150px;
+    font-size: 2.4em;
+  }
+
 }
 
 #home article, #photo article, #video article {
-  height: 450px;
+  height: 300px;
   position: absolute;
   text-align: center;
-  top: 200px;
-  margin: 50px 100px;
+  top: 420px;
+  background: rgba(0,0,0,0.6);
+  img {
+    position: absolute;
+    bottom: 248px;
+    right: 38%;
+  }
 }
 
 #home {
@@ -34,7 +47,15 @@ body {
   background: url(image_path("ants-1.jpg")) 50% 0 repeat fixed; min-height: 800px;
 }
 
-.notice, .alert {
+.notice, .alert, h1 {
   -webkit-margin-before: 0px;
   -webkit-margin-after: 0px;
+}
+
+
+div.info {
+  margin: 80px 100px 50px 100px;
+  p {
+    color: #c0c0c0;
+  }
 }

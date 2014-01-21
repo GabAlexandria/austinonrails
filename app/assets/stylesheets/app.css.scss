@@ -1,0 +1,29 @@
+.header {
+  position: absolute;
+  z-index: 1001;
+  text-align: center;
+  width: 100%;
+  top: 100px;
+  ul, ul.fixed {
+    list-style-type: none;
+    li {
+      display: inline;
+      margin: 0 10px;
+      a {
+        color: white;
+        text-decoration: none;
+        font-size: 25px;
+        text-transform: uppercase;
+        font-weight: bold;
+      }
+    }
+  }
+  ul.fixed {
+      position: fixed;
+      background: rgba(0,0,0,0.6);
+      text-align: center;
+      width: 100%;
+      top:10px;
+    }
+
+}

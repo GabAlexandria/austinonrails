@@ -5,13 +5,6 @@ function isViewable(img) {
   var imgTop = Math.round(img.offset().top);
   var imgBottom = imgTop + img.height();
 
-
-  console.log(windowTop)
-  console.log(windowBottom)
-  console.log(imgTop)
-  console.log(imgBottom)
-  console.log("--------------------")
-
   return ( (imgTop <= windowBottom) && (imgBottom >= windowTop) )
 }
 
@@ -30,3 +23,14 @@ $(document).ready(function() {
     });
   });
 });
+
+/*$(document).ready(function() {
+  $(window).scroll(function() {
+    console.log($(".header ul li").offset().top)
+    if ( $(".header ul li").offset().top <= $(window).scrollTop() ) {
+      $(".header ul").addClass("fixed")
+    } else {
+      $(".header ul").removeClass("fixed")
+    }
+  })
+}) */
